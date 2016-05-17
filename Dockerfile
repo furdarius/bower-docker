@@ -4,8 +4,9 @@ FROM furdarius/npm-docker
 
 MAINTAINER furdarius <getlag@yandex.com>
 
-# Install gulp:
-RUN npm install --global bower
+# Install bower:
+RUN npm install --global bower && \
+	echo '{ "allow_root": true }' > /root/.bowerrc 
 
 # Set up the application directory
 VOLUME ["/app"]
@@ -13,3 +14,6 @@ WORKDIR /app
 
 # Define default command.
 ENTRYPOINT ["bower"]
+
+# Define default command.
+CMD ["install"]
