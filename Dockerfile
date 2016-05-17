@@ -14,6 +14,4 @@ WORKDIR /app
 
 # Define default command.
 ENTRYPOINT ["bower"]
-
-# Define default command.
 CMD ["install"]
