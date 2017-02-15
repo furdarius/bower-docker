@@ -1,6 +1,6 @@
 # Bower Docker Container
 # Base Dockerfile: furdarius/npm-docker
-FROM furdarius/npm-docker
+FROM furdarius/npm-docker:alpine
 
 MAINTAINER furdarius <getlag@yandex.com>
 
